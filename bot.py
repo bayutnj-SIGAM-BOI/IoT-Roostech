@@ -241,7 +241,7 @@ def read_serial():
     while True:
         try:
             line = ser.readline().decode().strip()
-            print("Dari ESP32:", line)
+            print("Data Dari ESP32:", line)
 
             parts = line.split("|")
             for part in parts:
